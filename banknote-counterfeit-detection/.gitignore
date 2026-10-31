@@ -1,0 +1,23 @@
+# Environments
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Tooling
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Data is downloaded on first run (CC BY 4.0, see README)
+data/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/

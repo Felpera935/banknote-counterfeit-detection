@@ -1,0 +1,6 @@
+model,display_name,cv_accuracy_mean,cv_accuracy_std,cv_precision_mean,cv_precision_std,cv_recall_mean,cv_recall_std,cv_f1_mean,cv_f1_std,cv_roc_auc_mean,cv_roc_auc_std,test_accuracy,test_precision,test_recall,test_f1,test_roc_auc,genuine_accepted,genuine_rejected,fakes_accepted,fakes_caught
+svm_rbf,SVM (RBF kernel),1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,153,0,0,122
+knn,k-NN (k=5),0.9982,0.0022,0.9959,0.005,1.0,0.0,0.998,0.0025,0.9984,0.002,1.0,1.0,1.0,1.0,1.0,153,0,0,122
+decision_tree,Decision tree,0.9891,0.0062,0.984,0.0133,0.9918,0.0076,0.9878,0.0068,0.9894,0.0058,0.9673,0.938,0.9918,0.9641,0.9698,145,8,1,121
+linear_svm,Linear SVM,0.9882,0.0046,0.9798,0.0063,0.9939,0.005,0.9868,0.0052,0.9996,0.0003,1.0,1.0,1.0,1.0,1.0,153,0,0,122
+logistic_regression,Logistic regression,0.9781,0.0067,0.9586,0.0112,0.9939,0.005,0.9759,0.0073,0.9996,0.0003,0.9927,0.9839,1.0,0.9919,1.0,151,2,0,122

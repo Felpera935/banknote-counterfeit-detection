@@ -1,0 +1,39 @@
+# Decision tree limited to 4 consecutive checks (sensor units, not scaled)
+# Hold-out accuracy: 0.9491 | counterfeits accepted: 7 | leaves: 12
+# Some splits lead to the same class on both sides: they make leaves purer
+# but do not change any prediction, so firmware can merge them.
+
+|--- variance <= 0.274
+|   |--- skewness <= 7.565
+|   |   |--- variance <= -0.459
+|   |   |   |--- kurtosis <= 6.216
+|   |   |   |   |--- class: counterfeit
+|   |   |   |--- kurtosis >  6.216
+|   |   |   |   |--- class: counterfeit
+|   |   |--- variance >  -0.459
+|   |   |   |--- kurtosis <= 0.441
+|   |   |   |   |--- class: counterfeit
+|   |   |   |--- kurtosis >  0.441
+|   |   |   |   |--- class: genuine
+|   |--- skewness >  7.565
+|   |   |--- variance <= -4.726
+|   |   |   |--- class: counterfeit
+|   |   |--- variance >  -4.726
+|   |   |   |--- class: genuine
+|--- variance >  0.274
+|   |--- kurtosis <= -4.386
+|   |   |--- variance <= 3.304
+|   |   |   |--- class: counterfeit
+|   |   |--- variance >  3.304
+|   |   |   |--- class: genuine
+|   |--- kurtosis >  -4.386
+|   |   |--- variance <= 1.596
+|   |   |   |--- kurtosis <= -2.252
+|   |   |   |   |--- class: counterfeit
+|   |   |   |--- kurtosis >  -2.252
+|   |   |   |   |--- class: genuine
+|   |   |--- variance >  1.596
+|   |   |   |--- variance <= 2.037
+|   |   |   |   |--- class: genuine
+|   |   |   |--- variance >  2.037
+|   |   |   |   |--- class: genuine

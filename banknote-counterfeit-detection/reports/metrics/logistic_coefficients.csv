@@ -1,0 +1,5 @@
+feature,coefficient,odds_ratio_per_sd,pushes_towards
+skewness,-4.6901,0.0092,genuine
+variance,-4.6839,0.0092,genuine
+kurtosis,-4.3864,0.0124,genuine
+entropy,0.222,1.2486,counterfeit

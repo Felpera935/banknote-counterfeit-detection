@@ -1,0 +1,96 @@
+{
+  "dataset": {
+    "rows": 1372,
+    "genuine": 762,
+    "counterfeit": 610,
+    "train_rows": 1097,
+    "test_rows": 275
+  },
+  "settings": {
+    "test_size": 0.2,
+    "cv_folds": 5,
+    "random_state": 0,
+    "scikit_learn": "1.9.1"
+  },
+  "best_model_by_cv": "svm_rbf",
+  "models": {
+    "svm_rbf": {
+      "cv_accuracy": 1.0,
+      "cv_accuracy_std": 0.0,
+      "cv_recall": 1.0,
+      "test_accuracy": 1.0,
+      "test_recall": 1.0,
+      "fakes_accepted": 0,
+      "genuine_rejected": 0
+    },
+    "knn": {
+      "cv_accuracy": 0.9982,
+      "cv_accuracy_std": 0.0022,
+      "cv_recall": 1.0,
+      "test_accuracy": 1.0,
+      "test_recall": 1.0,
+      "fakes_accepted": 0,
+      "genuine_rejected": 0
+    },
+    "decision_tree": {
+      "cv_accuracy": 0.9891,
+      "cv_accuracy_std": 0.0062,
+      "cv_recall": 0.9918,
+      "test_accuracy": 0.9673,
+      "test_recall": 0.9918,
+      "fakes_accepted": 1,
+      "genuine_rejected": 8
+    },
+    "linear_svm": {
+      "cv_accuracy": 0.9882,
+      "cv_accuracy_std": 0.0046,
+      "cv_recall": 0.9939,
+      "test_accuracy": 1.0,
+      "test_recall": 1.0,
+      "fakes_accepted": 0,
+      "genuine_rejected": 0
+    },
+    "logistic_regression": {
+      "cv_accuracy": 0.9781,
+      "cv_accuracy_std": 0.0067,
+      "cv_recall": 0.9939,
+      "test_accuracy": 0.9927,
+      "test_recall": 1.0,
+      "fakes_accepted": 0,
+      "genuine_rejected": 2
+    }
+  },
+  "logistic_coefficients": {
+    "skewness": -4.69,
+    "variance": -4.684,
+    "kurtosis": -4.386,
+    "entropy": 0.222
+  },
+  "atm_limited_tree": {
+    "max_depth": 4,
+    "cv_accuracy": 0.9526,
+    "test_accuracy": 0.9491,
+    "fakes_accepted": 7
+  },
+  "unconstrained_tree": {
+    "depth": 8,
+    "cv_accuracy": 0.9891,
+    "test_accuracy": 0.9673,
+    "fakes_accepted": 1
+  },
+  "knn_scaling": {
+    "4 sensor features / unscaled": 1.0,
+    "4 sensor features / scaled": 1.0,
+    "+ ATM volume / unscaled": 0.5055,
+    "+ ATM volume / scaled": 0.9927
+  },
+  "majority_class_rate": 0.5564,
+  "human_review": {
+    "margin": 1.0,
+    "bills_flagged": 15,
+    "bills_total": 275,
+    "share_flagged": 0.0545,
+    "flagged_misclassified_by_linear_svm": 0,
+    "linear_svm_errors_outside_zone": 0
+  }
+}

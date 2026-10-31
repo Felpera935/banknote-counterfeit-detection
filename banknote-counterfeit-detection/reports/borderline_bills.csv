@@ -1,0 +1,16 @@
+bill_id,variance,skewness,kurtosis,entropy,decision_value,predicted,actual,correct
+942,-3.3793,-13.7731,17.9274,-2.0323,0.0597,counterfeit,counterfeit,True
+248,0.3798,0.7098,0.7572,-0.4444,-0.0739,genuine,genuine,True
+925,1.7425,3.6833,-4.0129,-1.7207,0.1311,counterfeit,counterfeit,True
+226,0.5706,-0.0248,1.2421,-0.5621,-0.1677,genuine,genuine,True
+917,1.5631,0.896,-1.9702,0.6547,0.4205,counterfeit,counterfeit,True
+1059,-3.2305,-7.2135,11.6433,-0.9461,0.4545,counterfeit,counterfeit,True
+47,-0.7869,9.5663,-3.7867,-7.5034,-0.6489,genuine,genuine,True
+119,0.9297,-3.7971,4.6429,-0.2957,-0.6556,genuine,genuine,True
+885,0.0302,-1.0512,1.4024,0.7737,0.6937,counterfeit,counterfeit,True
+227,-2.6479,10.1374,-1.331,-5.4707,-0.7808,genuine,genuine,True
+617,-0.278,8.1881,-3.1338,-2.5276,-0.8263,genuine,genuine,True
+919,0.8951,4.7738,-4.8431,-5.5909,0.8385,counterfeit,counterfeit,True
+1107,1.2198,2.0982,-3.1954,0.1284,0.8581,counterfeit,counterfeit,True
+1102,0.7376,4.8525,-4.7986,-5.6659,0.91,counterfeit,counterfeit,True
+1058,-1.5621,-2.2121,4.2591,0.2797,0.9442,counterfeit,counterfeit,True

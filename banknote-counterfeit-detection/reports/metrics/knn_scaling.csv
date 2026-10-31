@@ -1,0 +1,5 @@
+feature_set,scaling,cv_accuracy_mean,test_accuracy,fakes_accepted
+4 sensor features,unscaled,0.9991,1.0,0
+4 sensor features,scaled,0.9982,1.0,0
++ ATM volume,unscaled,0.5205,0.5055,71
++ ATM volume,scaled,0.9945,0.9927,1

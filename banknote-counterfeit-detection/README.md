@@ -166,7 +166,7 @@ net. These 15 bills are where an error would be most likely.
 ## How to run
 
 ```bash
-git clone https://github.com/<your-username>/banknote-counterfeit-detection.git
+git clone https://github.com/<Felpera935>/banknote-counterfeit-detection.git
 cd banknote-counterfeit-detection
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
